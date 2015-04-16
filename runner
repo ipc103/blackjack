@@ -1,7 +1,0 @@
-require_relative 'blackjack'
-require_relative 'dealer'
-require_relative 'deck'
-require_relative 'player'
-#!/usr/bin/env ruby
-
-Blackjack.new
