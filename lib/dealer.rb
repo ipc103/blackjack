@@ -1,9 +1,9 @@
 class Dealer 
 
-  attr_accessor :deck
+  attr_reader :deck
 
-  def initialize
-    self.deck = Deck.new
+  def initialize(deck)
+    @deck = deck
   end
   def deal_card(player)
    player.hand.push(self.deck.cards.shift)

@@ -6,7 +6,7 @@ class Blackjack
   def initialize
     self.player_one = Player.new
     self.player_two = Player.new
-    self.dealer = Dealer.new
+    self.dealer = Dealer.new(Deck.new)
     self.play_game
   end
 
