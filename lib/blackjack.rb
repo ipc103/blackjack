@@ -1,12 +1,12 @@
 class Blackjack
 
-  attr_accessor :player_one, :player_two, :deck, :dealer
+  attr_reader :player_one, :player_two, :deck, :dealer
   
 
-  def initialize
-    self.player_one = Player.new
-    self.player_two = Player.new
-    self.dealer = Dealer.new(Deck.new)
+  def initialize(player_one, player_two)
+    @player_one = Player.new
+    @player_two = Player.new
+    @dealer = Dealer.new(Deck.new)
     self.play_game
   end
 

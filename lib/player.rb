@@ -1,8 +1,9 @@
 class Player
-  attr_accessor :hand, :total
+  attr_accessor :total
+  attr_reader :hand
 
   def initialize
-    self.hand = []
+    @hand = []
   end
 
   def sum_total

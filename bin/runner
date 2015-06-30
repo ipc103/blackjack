@@ -4,4 +4,4 @@ require_relative '../lib/deck'
 require_relative '../lib/player'
 #!/usr/bin/env ruby
 
-Blackjack.new
+Blackjack.new(Player.new, Player.new)
